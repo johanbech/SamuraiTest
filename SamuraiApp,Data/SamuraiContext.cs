@@ -14,7 +14,7 @@ namespace SamuraiApp.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //var connect = ConfigurationManager.ConnectionStrings["Database"].ToString();
-            optionsBuilder.UseSqlServer("Server=localhost,1439;Initial Catalog=SamuraiDB;Integrated Security=false; User Id=sa;Password=Qqwerty75");
+            optionsBuilder.UseSqlServer("Server=localhost,1431;Initial Catalog=SamuraiDB;Integrated Security=false; User Id=sa;Password=Qqwerty75!");
         }
 
         public DbSet<Samurai> Samurais { get; set; }
